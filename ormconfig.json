@@ -1,0 +1,18 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "kaminto",
+    "database": "nest-restapi",
+    "entities": ["src/**/**.entity{.ts,.js}"],
+    "autoSchemaSync": true,
+    "logging": true,
+    "migrations": [
+        "dist/src/migration/**/*.js"
+     ], 
+    "cli": {
+        "migrationsDir": "src/migration"
+    }
+}
+
